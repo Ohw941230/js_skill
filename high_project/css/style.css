@@ -1,0 +1,39 @@
+body {
+  background: #eff0f0;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: no-repeat url(../image/body_bg.png) 0 0;
+  background-size: cover;
+  z-index: -1;
+  mix-blend-mode: overlay;
+}
+
+/* colours */
+p {
+  font-size: 30px;
+}
+
+.three_text_slide {
+  position: relative;
+}
+.three_text_slide .text_box {
+  padding: 20px;
+  background: #fff;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.three_text_slide .text_box .title {
+  font-size: 24px;
+}
+.three_text_slide .text_box .content {
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
