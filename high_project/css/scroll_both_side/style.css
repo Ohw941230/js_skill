@@ -7,28 +7,28 @@
   width: 50%;
 }
 
-.right-content {
+.left-content {
   padding-right: 15px;
 }
 
-.left-content {
+.right-content {
   height: 100vh;
   position: relative;
 }
 
-.left-content > * {
+.right-content > * {
   position: absolute;
-  left: 50%;
+  right: -50%;
   top: 50%;
   opacity: 0;
   visibility: hidden;
 }
 
 @media screen and (max-width: 800px) {
-  .left-content {
+  .right-content {
     display: none;
   }
-  .right-content {
-    padding-left: 15px;
+  .left-content {
+    padding-right: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

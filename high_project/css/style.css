@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: #eff0f0;
 }
@@ -8,7 +9,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: no-repeat url(../image/image01.jpg) 0 0;
+  background: no-repeat url(../image/bg.jpg) 0 0;
   background-size: cover;
   z-index: -1;
   mix-blend-mode: overlay;
@@ -36,4 +37,132 @@ p {
 }
 .three_text_slide .text_box .content {
   font-size: 20px;
+}
+
+.s4 .flex_box {
+  display: flex;
+}
+
+.s5 {
+  /*--- 任意 ---*/
+  /*--- 任意 ---*/
+  /* --------------------------------------------------
+    loopslider-container
+  -------------------------------------------------- */
+  /* POINT
+  1. 画像の横幅、縦幅は任意
+  2. (画像の横幅+余白)×枚数の大きさに合わせて2000px!importantの値を変更
+  3. 4000px!importantの値をその二倍に
+  */
+  /* slide2*/
+}
+.s5 .loopslider figure img {
+  width: 100%;
+  height: auto;
+}
+.s5 .loopslider-container {
+  width: 100%;
+  text-align: center;
+}
+.s5 .loopslider-container h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 60px 10px 30px;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+.s5 .loopslider-container .doubleLine {
+  max-width: 430px;
+  margin: 0 auto;
+}
+.s5 .loopslider-container p {
+  text-align: center;
+  font-size: 14px;
+  margin: 30px 10px 60px;
+  line-height: 1;
+}
+.s5 .loopslider-container p br {
+  display: none;
+}
+.s5 .loopslider-container .loopslider {
+  margin: 0 auto;
+  height: 430px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+.s5 .loopslider-container .loopslider .loopslider_wrap {
+  width: 4000px !important;
+}
+.s5 .loopslider-container .loopslider .loopslider_wrap > ul {
+  width: 2000px !important;
+  height: 430px;
+  float: left;
+  display: contents;
+  overflow: visible;
+}
+.s5 .loopslider-container .loopslider .loopslider_wrap > ul li {
+  width: 600px;
+  height: 430px;
+  float: left;
+  display: inline;
+  overflow: visible;
+  padding: 0 15px;
+}
+.s5 .loopslider-container .loopslider .loopslider_wrap > ul li figure {
+  margin-bottom: 10px;
+}
+.s5 .loopslider-container .loopslider .loopslider_wrap > ul li span.name {
+  display: block;
+  font-size: 18px;
+}
+.s5 .loopslider-container .loopslider .loopslider_wrap > ul li span.img-cap {
+  font-size: 12px;
+}
+.s5 .loopslider-container .loopslider .loopslider_wrap > ul li span.img-cap big {
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0 2px;
+}
+.s5 .loopslider-container figcaption {
+  bottom: -20px;
+  right: 4px;
+}
+.s5 .loopslider-container.slider2 .loopslider {
+  height: 570px;
+}
+.s5 .loopslider-container.slider2 .loopslider .loopslider_wrap {
+  width: 8000px !important;
+}
+.s5 .loopslider-container.slider2 .loopslider .loopslider_wrap > ul {
+  width: 4000px !important;
+  height: 570px;
+}
+.s5 .loopslider-container.slider2 .loopslider .loopslider_wrap > ul li {
+  width: 500px;
+  height: 570px;
+}
+@media only screen and (max-width: 767px) {
+  .s5 .loopslider-container.slider2 .loopslider {
+    height: 270px;
+  }
+  .s5 .loopslider-container.slider2 .loopslider .loopslider_wrap {
+    width: 4000px !important;
+  }
+  .s5 .loopslider-container.slider2 .loopslider .loopslider_wrap > ul {
+    width: 2000px !important;
+    height: 270px;
+  }
+  .s5 .loopslider-container.slider2 .loopslider .loopslider_wrap > ul li {
+    width: 250px;
+    height: 270px;
+  }
+}
+
+.mt30 {
+  margin-top: 90px;
+}
+
+.mb30 {
+  margin-bottom: 90px;
 }/*# sourceMappingURL=style.css.map */

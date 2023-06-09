@@ -7,7 +7,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: no-repeat url(../image/image01.jpg) 0 0;
+  background: no-repeat url(../image/bg.jpg) 0 0;
   background-size: cover;
   z-index: -1;
   mix-blend-mode: overlay;
@@ -17,6 +17,7 @@ body {
 p {
   font-size: 30px;
 }
+
 .three_text_slide {
   position: relative;
   .text_box {
@@ -34,4 +35,135 @@ p {
       font-size: 20px;
     }
   }
+}
+.s4 {
+  .flex_box {
+    display: flex;
+  }
+}
+.s5 {
+  /*--- 任意 ---*/
+
+  .loopslider figure img {
+    width: 100%;
+    height: auto;
+  }
+  /*--- 任意 ---*/
+
+  /* --------------------------------------------------
+  loopslider-container
+-------------------------------------------------- */
+  /* POINT
+1. 画像の横幅、縦幅は任意
+2. (画像の横幅+余白)×枚数の大きさに合わせて2000px!importantの値を変更
+3. 4000px!importantの値をその二倍に
+*/
+  .loopslider-container {
+    width: 100%;
+    text-align: center;
+  }
+  .loopslider-container h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 60px 10px 30px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+  }
+  .loopslider-container .doubleLine {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+  .loopslider-container p {
+    text-align: center;
+    font-size: 14px;
+    margin: 30px 10px 60px;
+    line-height: 1;
+  }
+  .loopslider-container p br {
+    display: none;
+  }
+  .loopslider-container .loopslider {
+    margin: 0 auto;
+    height: 430px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+  }
+  .loopslider-container .loopslider .loopslider_wrap {
+    width: 4000px !important;
+  }
+  .loopslider-container .loopslider .loopslider_wrap > ul {
+    width: 2000px !important;
+    height: 430px;
+    float: left;
+    display: contents;
+    overflow: visible;
+  }
+  .loopslider-container .loopslider .loopslider_wrap > ul li {
+    width: 600px;
+    height: 430px;
+    float: left;
+    display: inline;
+    overflow: visible;
+    padding: 0 15px;
+  }
+  .loopslider-container .loopslider .loopslider_wrap > ul li figure {
+    margin-bottom: 10px;
+  }
+  .loopslider-container .loopslider .loopslider_wrap > ul li span.name {
+    display: block;
+    font-size: 18px;
+  }
+  .loopslider-container .loopslider .loopslider_wrap > ul li span.img-cap {
+    font-size: 12px;
+  }
+  .loopslider-container .loopslider .loopslider_wrap > ul li span.img-cap big {
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 0 2px;
+  }
+
+  .loopslider-container figcaption {
+    bottom: -20px;
+    right: 4px;
+  }
+
+  /* slide2*/
+  .loopslider-container.slider2 .loopslider {
+    height: 570px;
+  }
+  .loopslider-container.slider2 .loopslider .loopslider_wrap {
+    width: 8000px !important;
+  }
+  .loopslider-container.slider2 .loopslider .loopslider_wrap > ul {
+    width: 4000px !important;
+    height: 570px;
+  }
+  .loopslider-container.slider2 .loopslider .loopslider_wrap > ul li {
+    width: 500px;
+    height: 570px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .loopslider-container.slider2 .loopslider {
+      height: 270px;
+    }
+    .loopslider-container.slider2 .loopslider .loopslider_wrap {
+      width: 4000px !important;
+    }
+    .loopslider-container.slider2 .loopslider .loopslider_wrap > ul {
+      width: 2000px !important;
+      height: 270px;
+    }
+    .loopslider-container.slider2 .loopslider .loopslider_wrap > ul li {
+      width: 250px;
+      height: 270px;
+    }
+  }
+}
+.mt30 {
+  margin-top: 90px;
+}
+.mb30 {
+  margin-bottom: 90px;
 }
